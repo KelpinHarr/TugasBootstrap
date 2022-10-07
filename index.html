@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Bootstrap</title>
+    <link rel="icon" href="images/anyakecil.jpg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css"> 
+    <style>
+        .bgnav{
+            background-color: yellowgreen;
+        }
+        .imgborder{
+            border-radius: 50px;
+        }
+        .ukuranfoto{
+          height : 215px;
+          width : 150px;
+        }
+        .bgfoto{
+            background-color: black;
+        }
+        .bgleft{
+            background-color: goldenrod;
+        }
+        .bgright{
+            background-color: brown;
+        }
+        .bgfooter{
+          background-color : black;
+        }
+    </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bgnav">
+    <div class="container-fluid">
+      <a class="navbar-brand tebel text-white" href="#">Portofolio</a>
+      <button class="navbar-toggler putih bgkanan" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon putih"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active text-white" aria-current="page" href="#skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active text-white" href="#bahasa">Languages</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active text-white" href="#biodata">Biodata</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active text-white" href="#organization">Organization</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active text-white" href="#CP">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container-fluid bgfoto">
+    <div class="row">
+        <div class="col-md-3" style="display: flex;justify-content:center;" id="whoiam">
+            <img src="Images/221116941.jpg" class="ukuranfoto imgborder mt-3 ms-0 mb-3 " alt="...">
+        </div>
+        <div class="col-md-9"style="display: flex;justify-content:center;">
+            <span class="namaxgelar">
+                <h1 style = "margin-top : 90px; color : yellow;">Christopher Alfonsius Calvin Harsono</h1>
+                <p style = "color : yellowgreen;">-Whatever is meant to happen will be happen-</p>
+            </span>
+            
+        </div>
+        <div class="col-md-4 bgleft">
+            <p class="h1 ms-2 mt-3" id = "skills" style = "text-align : center;">Skills</p>
+            <div class="card" style="width: 18rem;">
+              <div class="card-body">
+                  <h5 class="card-title" style = "text-align : center;">C++</h5>
+              </div>
+              <div class="progress">
+                  <div class="progress-bar color-1" role="progressbar" aria-valuenow="90"
+                      aria-valuemin="0" aria-valuemax="100" style="width:95%;">
+                  <span>95%</span>
+                  </div>
+              </div>
+            </div>
+            <div class="card mt-4" style="width: 18rem;">
+              <div class="card-body">
+                  <h5 class="card-title" style = "text-align : center;">Java</h5>
+              </div>
+              <div class="progress">
+                  <div class="progress-bar color-1" role="progressbar" aria-valuenow="90"
+                      aria-valuemin="0" aria-valuemax="100" style="width:80%;">
+                  <span>80%</span>
+                  </div>
+              </div>
+            </div>
+            <div class="card mt-4" style="width: 18rem;">
+              <div class="card-body">
+                  <h5 class="card-title" style = "text-align : center;">Web Design</h5>
+              </div>
+              <div class="progress">
+                  <div class="progress-bar color-1" role="progressbar" aria-valuenow="90"
+                      aria-valuemin="0" aria-valuemax="100" style="width:83%;">
+                  <span>83%</span>
+                  </div>
+              </div>
+            </div>
+            <div class="card mt-4" style="width: 18rem;">
+              <div class="card-body">
+                  <h5 class="card-title" style = "text-align : center;">MySQL</h5>
+              </div>
+              <div class="progress">
+                  <div class="progress-bar color-1" role="progressbar" aria-valuenow="90"
+                      aria-valuemin="0" aria-valuemax="100" style="width:88%;">
+                  <span>88%</span>
+                  </div>
+              </div>
+            </div>
+            <p class="h1 ms-2 mt-3" style = "text-align : center;" id = "bahasa">Languages</p>
+            <ul>
+              <li style = "font-size : 28px;">Indonesia</li>
+              <li style = "font-size : 28px;">English</li>
+              <li style = "font-size : 28px;">Java</li>
+              <li style = "font-size : 28px;">Korea</li>
+              <li style = "font-size : 28px;">Japan</li>
+            </ul>
+        </div>
+        <div class="col-md-8 bgright">
+            <h1 class = "mt-3 ms-2" id = "biodata" style = "text-align : center; color : lightblue;">Biodata</h1>
+            <ul>
+              <li style = "color : lightblue; font-size : 25px; margin-left : 20px; margin-top : 25px;">Nama : Christopher Alfonsius Calvin Harsono</li>
+              <li style = "color : lightblue; font-size : 25px; margin-left : 20px; margin-top : 5px;">Alamat : Gangdong-daero, Songnae-dong, Gangdong-gu, Seoul</li>
+              <li style = "color : lightblue; font-size : 25px; margin-left : 20px; margin-top : 5px;">No. Telp : 081234567769</li>
+              <li style = "color : lightblue; font-size : 25px; margin-left : 20px; margin-top : 5px;">Agama : Katolik</li>
+            </ul>
+            <h1 class = "mt-3 ms-2" id = "education" style = "text-align : center; color : lightblue;">Education</h1>
+            <ul>
+              <li style = "color : lightblue; font-size : 25px; margin-left : 20px; margin-top : 25px;">SDK Yohannes Gabriel (2010 - 2015)</li>
+              <li style = "color : lightblue; font-size : 25px; margin-left : 20px; margin-top : 5px;">SMPK Santa Agnes (2015 - 2018)</li>
+              <li style = "color : lightblue; font-size : 25px; margin-left : 20px; margin-top : 5px;">SMAK Santa Agnes (2018-2021)</li>
+              <li style = "color : lightblue; font-size : 25px; margin-left : 20px; margin-top : 5px;">iSTTS (2021 - sekarang)</li>
+            </ul>
+
+            <h1 class = "mt-3 ms-2" id = "organization" style = "text-align : center; color : lightblue;">Organization</h1>
+            <ul>
+              <li style = "color : lightblue; font-size : 25px; margin-left : 20px; margin-top : 25px;">Wakil Ketua OSIS SMPK Santa Agnes</li>
+              <li style = "color : lightblue; font-size : 25px; margin-left : 20px; margin-top : 5px;">Wakil Ketua OSIS SMAK Santa Agnes</li>
+              <li style = "color : lightblue; font-size : 25px; margin-left : 20px; margin-top : 5px;">Peserta Kaderisasi Keuskupan Surabaya</li>
+              <li style = "color : lightblue; font-size : 25px; margin-left : 20px; margin-top : 5px;">Panitia Freshman Summit 2022</li>
+            </ul>
+        </div>
+    </div>
+  </div>
+  <footer class="bgfooter">
+    <div class="container-fluid tebel">
+        <div class="row">
+            <div class="col-md-9 mt-5" id="CP" style = "color : white; font-size : 25px; font-weight : bold;">
+                For further information, Please contact me on : 
+            </div>
+            <div class="col-md-11 ratakanan" style = "margin-top : -90px;">
+                <a href="mailto:hwangyeji@gmail.com"><img src="Images/Mail Logo.png" class="rounded float-end mt-2 mb-2" style = "height : 130px; width : 128px;" alt="..." ></a>
+                <a href="https://www.instagram.com/"><img src="Images/Instagram Logo.png" class="rounded float-end me-3 mt-2 mb-2" style = "height : 130px; width : 133px;" alt="..."></a>
+                <a href="tel:082"><img src="Images/Phone Logo.png" class="rounded float-end me-3 mt-2 mb-2" style = "height : 130px; width : 128px;" alt="..."></a>
+            </div>
+        </div>
+    </div>
+  </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+</body>
+</html>
